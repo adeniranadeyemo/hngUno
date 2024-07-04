@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <section class="time">
+        <p>
+          <span>UTC Time: </span>
+          <span id="time" data-testid="currentTimeUTC"></span>
+        </p>
+
+        <p>
+          <span>Day: </span>
+          <span id="day" data-testid="currentDay"></span>
+        </p>
+      </section>
+
+      <section class="hero">
+        <div class="profile-container">
+          <img
+            src=""
+            data-testid="slackProfilePicture"
+            alt="Slack profile picture"
+          />
+
+          <div class="profile">
+            <p data-testid="slackDisplayName">
+              <span>Slack Name: </span>Adeniran Adeyemo
+            </p>
+            <p data-testid="slackEmail">
+              <span>Email: </span>niranadeniran1@gmail.com
+            </p>
+          </div>
+        </div>
+
+        <div class="texts">
+          <h1>Goals for the next two years</h1>
+          <ul>
+            <li>Learn about web scraping</li>
+            <li>Learn about web scraping</li>
+            <li>Learn about web scraping</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="links">
+        <h2>Links</h2>
+        <ul>
+          <li>
+            Learn more about
+            <a data-testid="hngLink" href="http://hng.tech/learn"
+              ><span>hng.tech/learn</span></a
+            >
+          </li>
+
+          <li>
+            Learn more about
+            <a data-testid="keywordLink" href="http://keyword.dog"
+              ><span>keyword.dog</span></a
+            >
+          </li>
+
+          <li>
+            Learn more about
+            <a data-testid="scrapeanywebLink" href="http://scrapeanyweb.site"
+              ><span>scrapeanyweb.site</span></a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

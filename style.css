@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #272727;
+}
+
+main {
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+}
+
+.time {
+  padding: 10px 0;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.time p {
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.hero {
+  padding: 20px 0;
+}
+
+.profile {
+  margin: 10px 0;
+}
+
+.profile-container .profile p {
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+.texts {
+  padding: 20px 0;
+}
+
+.texts h1 {
+  font-size: 30px;
+  padding: 15px 0;
+}
+
+.texts li {
+  font-size: 18px;
+  padding: 7px 0;
+  list-style-type: none;
+}
+
+.links {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.links h2 {
+  margin: 1rem 0;
+}
+
+.links a {
+  text-decoration: none;
+  color: #d4d4ce;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.links li {
+  list-style-type: none;
+  padding: 5px 0;
+}
+
+.links a > span {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .profile-container img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .profile {
+    text-align: center;
+  }
+
+  .texts {
+    /* padding: 20px; */
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .hero {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .texts {
+    /* width: 40%; */
+  }
+}
