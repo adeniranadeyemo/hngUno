@@ -1,28 +1,28 @@
-const utcTime = document.getElementById('time');
-const utcDay = document.getElementById('day');
+const timeUTC = document.getElementById('time');
+const dayUTC = document.getElementById('day');
 
-function updateUTCTimeAndDay() {
+function updateUTC() {
   const now = new Date();
   const day = now.getDate();
   const hour = now.getHours();
   const minutes = now.getMinutes();
   const ampm = `${hour > 12 ? 'pm' : 'am'}`;
 
-  if (hour < 10) {
-    utcTime.textContent = `0${hour}:${minutes} ${ampm}`;
-  } else {
-    utcTime.textContent = `${hour}:${minutes} ${ampm}`;
-  }
+  timeUTC.textContent = `${hour < 10 ? `0${hour}` : hour}:${minutes} ${ampm}`;
+
+  // hour < 10
+  //   ? (timeUTC.textContent = `0${hour}:${minutes} ${ampm}`)
+  //   : (timeUTC.textContent = `${hour}:${minutes} ${ampm}`);
 
   // prettier-ignore
   const daysOfTheWeek = [
     'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',
   ];
-  const utcDayString = daysOfTheWeek[day];
+  const dayUTCString = daysOfTheWeek[day];
 
-  utcDay.textContent = utcDayString;
+  dayUTC.textContent = dayUTCString;
 }
 
-updateUTCTimeAndDay();
+updateUTC();
 
-setInterval(updateUTCTimeAndDay, 1000);
+setInterval(updateUTC, 1000);
