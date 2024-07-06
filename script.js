@@ -6,9 +6,12 @@ function updateUTC() {
   const day = now.getDate();
   const hour = now.getHours();
   const minutes = now.getMinutes();
-  const ampm = `${hour > 12 ? 'pm' : 'am'}`;
+  const ampm = `${hour >= 12 ? 'pm' : 'am'}`;
 
-  timeUTC.textContent = `${hour < 10 ? `0${hour}` : hour}:${minutes} ${ampm}`;
+  timeUTC.textContent = `
+    ${hour < 10 ? `0${hour}` : hour}:${
+    minutes < 10 ? `0${minutes}` : minutes
+  } ${ampm}`;
 
   // hour < 10
   //   ? (timeUTC.textContent = `0${hour}:${minutes} ${ampm}`)
