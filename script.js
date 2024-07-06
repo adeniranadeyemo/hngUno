@@ -1,5 +1,7 @@
-const timeUTC = document.getElementById('time');
-const dayUTC = document.getElementById('day');
+const timeUTC = document.querySelector('#time');
+
+const dayUTC = document.querySelector('#day');
+console.log(dayUTC);
 
 function updateUTC() {
   const now = new Date();
@@ -13,10 +15,6 @@ function updateUTC() {
     minutes < 10 ? `0${minutes}` : minutes
   }${ampm}`;
 
-  // hour < 10
-  //   ? (timeUTC.textContent = `0${hour}:${minutes} ${ampm}`)
-  //   : (timeUTC.textContent = `${hour}:${minutes} ${ampm}`);
-
   // prettier-ignore
   const daysOfTheWeek = [
     'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',
@@ -25,7 +23,5 @@ function updateUTC() {
 
   dayUTC.textContent = dayUTCString;
 }
-
-updateUTC();
 
 setInterval(updateUTC, 1000);

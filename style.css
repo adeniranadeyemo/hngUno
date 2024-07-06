@@ -14,7 +14,7 @@ main {
   padding: 2rem;
 }
 
-.time {
+.time-day {
   padding: 1rem 2rem;
   background-color: #272727;
   color: #f5f5f5;
@@ -25,8 +25,12 @@ main {
   text-align: center;
 }
 
-.time p {
+.time-day p {
   font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .profile-container {
@@ -67,9 +71,12 @@ main {
 }
 
 .texts li {
-  font-size: 18px;
-  margin-bottom: 0.7rem;
+  font-size: 1.2rem;
   list-style-type: none;
+}
+
+.texts li:not(:last-child) {
+  margin-bottom: 0.7rem;
 }
 
 .external-links {
