@@ -11,7 +11,7 @@ function updateUTC() {
   timeUTC.textContent = `
     ${hour < 10 ? `0${hour}` : hour}:${
     minutes < 10 ? `0${minutes}` : minutes
-  } ${ampm}`;
+  }${ampm}`;
 
   // hour < 10
   //   ? (timeUTC.textContent = `0${hour}:${minutes} ${ampm}`)
